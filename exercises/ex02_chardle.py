@@ -1,6 +1,6 @@
 """EX02 - Chardle - A cute step toward Wordle."""
 
-___author___ = "730859406"
+__author__ = "730859406"
 
 """Putting it all together to run smoothly."""
 
@@ -37,30 +37,32 @@ def contains_char(user_word: str, user_letter: str) -> None:
     print("Searching for " + user_letter + " in " + user_word)
     count: int = 0
     if user_word[0] == user_letter:
-        print(str(user_letter) + " found at index 0")
+        print(user_letter + " found at index 0")
         count = count + 1
     if user_word[1] == user_letter:
-        print(str(user_letter) + " found at index 1")
+        print(user_letter + " found at index 1")
         count = count + 1
     if user_word[2] == user_letter:
-        print(str(user_letter) + " found at index 2")
+        print(user_letter + " found at index 2")
         count = count + 1
     if user_word[3] == user_letter:
-        print(str(user_letter) + " found at index 3")
+        print(user_letter + " found at index 3")
         count = count + 1
     if user_word[4] == user_letter:
-        print(str(user_letter) + " found at index 4")
+        print(user_letter + " found at index 4")
         count = count + 1
     if count == 0:
         print("No instances of " + user_letter + " found in " + user_word)
+    elif count == 1:
+        print("1 instance of " + user_letter + " found in " + user_word)
     else:
         print(str(count) + " instances of " + user_letter + " found in " + user_word)
 
 
 # The counts in this one also took me a while, but I was eventually able to
 # figure it out.
-# I was mostly having trouble with where to place the variable, but after trial and error
-# I figured it out.
+# I was mostly having trouble with where to place the variable, but after trial and
+# error, I figured it out.
 
 if __name__ == "__main__":
     main()
